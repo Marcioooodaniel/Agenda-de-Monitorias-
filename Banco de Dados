@@ -50,3 +50,14 @@ INSERT INTO agendamentos (id_monitor, id_aluno, id_materia, data_hora) VALUES
 (1, 3, 1, '2025-10-01 14:00:00'),
 (1, 3, 3, '2025-10-02 10:00:00'),
 (2, 3, 2, '2025-10-03 15:00:00');
+
+SELECT 
+a1.nome AS aluno,
+a2.nome AS monitor,
+m.nome AS materia,
+ag.data_hora
+FROM agendamentos ag
+JOIN alunos a1 ON ag.id_aluno = a1.id
+JOIN alunos a2 ON ag.id_monitor = a2.id
+JOIN materias m ON ag.id_materia = m.id
+ORDER BY ag.data_hora;
