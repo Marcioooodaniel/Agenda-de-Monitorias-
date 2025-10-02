@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="hidth=device-width, initial-scale=1.0">
+  <title>Agenda de monitoramento</title>
+  <link rel="stylesheet" href="syle.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Agenda monitorias</h1>
+    <form id="agendamentoForm">
+      <label for="nome">Seu nome</label>
+      <input type="text" id="nome" required>
+
+      <label for="materia">Materia:</label>
+      <select id="materia" required>
+        <option value="">Selecione</option>
+        <option value="matematica">matematica</option>
+        <option value="fisica">fisica</option>
+        <option value="quimica">quimica</option>
+        <option value="biologia">biologia</option>
+      </select>
+
+      <label for="monitor">monitor:</label>
+      <select id="monitor" required>
+        <option value="">Selecione</option>
+        <option value="abraão">abraão</option>
+        <option value="marcio">marcio</option>
+        <option value="beatriz">beatriz</option>
+      </select>
+
+      <label for="hora">hora</label>
+      <input type="time" id="hora" required>
+
+      <label for="data">data</label>
+      <input type="time" id="data" required>
+
+      <button type="submit">Agenda</button>
+     </form>
+     <h2>Agendamentos</h2>
+     <ul id="listaAgendamentos"></ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
